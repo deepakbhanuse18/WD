@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak's Assignments</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #f5f5f5, #c2d6d6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 50px;
+      color: #1f618d;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .button-container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .btn {
+      padding: 18px 35px;
+      font-size: 1.3em;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(to right, #6a5acd, #00bcd4);
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(to right, #00bcd4, #6a5acd);
+    }
+
+    .btn:active {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .btn {
+      animation: pulse 1.5s infinite;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Deepak's Web Development Assignments</h1>
+  <div class="button-container">
+    <a href="HTML/index.html" class="btn">HTML Assignments</a>
+    <a href="CSS/index.html" class="btn">CSS Assignments</a>
+    <a href="XML_CSS/XML_index.html" class="btn">XML Assignments</a>
+  </div>
+</body>
+</html>
